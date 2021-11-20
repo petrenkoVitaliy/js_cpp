@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Attach to Node",
+      "type": "node",
+      "request": "attach"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Node Debugger",
+      "program": "${workspaceFolder}/lib/index.ts",
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+      "preLaunchTask": "npm: build"
+    }
+  ]
+}

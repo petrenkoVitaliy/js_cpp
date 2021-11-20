@@ -1,0 +1,8 @@
+{
+  "python.pythonPath": "C:\\Users\\vitt\\AppData\\Local\\Microsoft\\WindowsApps\\python3.8.exe",
+  "files.associations": {
+    "string": "cpp",
+    "xiosbase": "cpp"
+  },
+  "cSpell.words": ["Napi"]
+}

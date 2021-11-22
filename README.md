@@ -1,4 +1,4 @@
-# js_cpp
+# ts_cpp
 
 #### [node-addon-api](https://www.npmjs.com/package/node-addon-api): playground 
 

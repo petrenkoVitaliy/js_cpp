@@ -1,16 +1,19 @@
 #include <napi.h>
 #include "add.h"
 
-Napi::Value Add(const Napi::CallbackInfo& info) {
+Napi::Value Add(const Napi::CallbackInfo &info)
+{
   Napi::Env env = info.Env();
 
-  if (info.Length() < 2) {
+  if (info.Length() < 2)
+  {
     Napi::TypeError::New(env, "Wrong number of arguments")
         .ThrowAsJavaScriptException();
     return env.Null();
   }
 
-  if (!info[0].IsNumber() || !info[1].IsNumber()) {
+  if (!info[0].IsNumber() || !info[1].IsNumber())
+  {
     Napi::TypeError::New(env, "Wrong arguments").ThrowAsJavaScriptException();
     return env.Null();
   }
@@ -21,4 +24,3 @@ Napi::Value Add(const Napi::CallbackInfo& info) {
 
   return num;
 }
-

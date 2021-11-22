@@ -4,7 +4,7 @@
       "target_name": "modules",
       "sources": [ 
         "<!@(node -p \" "+
-            "const folders = ['add', 'sub'];" +
+            "const folders = ['add', 'sub', 'long_mult'];" +
             "const fs = require('fs'); folders.map(folder => fs.readdirSync('./cpp_modules/' + folder).map(f=>'cpp_modules/' + folder + '/'+f).join(' ')).flat().join(' ');" +
           "\")",
 

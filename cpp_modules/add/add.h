@@ -1,3 +1,3 @@
 #include <napi.h>
 
-Napi::Value Add(const Napi::CallbackInfo& info);
+Napi::Value Add(const Napi::CallbackInfo &info);

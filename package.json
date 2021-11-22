@@ -4,14 +4,15 @@
   "description": "none",
   "main": "dist/index.js",
   "scripts": {
-    "start": "node dist/lib/index.js",
+    "start": "node dist/index.js",
     "build": "tsc",
     "dev": "nodemon --watch lib/** --ext ts,json --exec \"npm run dev:build\"",
     "dev:incremental": "tsc-watch --onSuccess \"node ./dist/index.js\"",
     "dev:incremental:brk": "tsc-watch --onSuccess \"node --inspect-brk ./dist/index.js\"",
     "dev:build:watch": "tsc -w",
     "dev:build": "ts-node lib/index.ts",
-    "dev:start": "nodemon --watch dist dist/index.js"
+    "dev:start": "nodemon --watch dist dist/index.js",
+    "build:cpp": "node-gyp rebuild"
   },
   "author": "",
   "license": "ISC",
